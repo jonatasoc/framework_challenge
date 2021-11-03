@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+<h1 align="center">
+    Framework - Challenge
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# :pushpin: Table of Contents
 
-In the project directory, you can run:
+- [About](#information_source-about)
+- [Installation](#construction_worker-installation)
+- [Getting Started](#runner-getting-started)
+- [License](#closed_book-license)
 
-### `yarn start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# :information_source: About
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Projeto para atendimento do desafio da Framework.
 
-### `yarn test`
+Obter informações de POSTS, ALBUMS e TODOS da API [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# :construction_worker: Installation
 
-### `yarn build`
+**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`git clone https://github.com/jonatasoc/framework_challenge.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`git@github.com:jonatasoc/framework_challenge.git`
 
-### `yarn eject`
+**Install dependencies**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`yarn`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# :runner: Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+After that, run the following command in order to start the application in a development environment:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`yarn start`
 
-## Learn More
+# :closed_book: License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Released in 2020 (Work in progress)
+This project is under the MIT license
