@@ -4,6 +4,8 @@
 
 ---
 
+Publicado em: https://framework-challenge-jonatasoc.netlify.app/
+
 # :pushpin: Table of Contents
 
 - [About](#information_source-about)
