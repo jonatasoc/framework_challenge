@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     --title: #2e384d;
     --red: #e83f5b;
     --green: #4cd62b;
-    --blue: #747bf9;
+    --blue: #5063f8;
     --white: #fff;
   }
 
