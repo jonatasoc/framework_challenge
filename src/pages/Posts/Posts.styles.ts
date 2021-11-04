@@ -20,6 +20,12 @@ export const PostContent = styled.div`
   flex-direction: column;
 `;
 
+export const PostDescription = styled.p`
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+`;
+
 export const HeaderPageContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -43,12 +49,6 @@ export const Title = styled.p`
 
   font-size: 1.5rem;
   letter-spacing: 1px;
-`;
-
-export const PostDescription = styled.p`
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 10px;
 `;
 
 interface BackIconProps {

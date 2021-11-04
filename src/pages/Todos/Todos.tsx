@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import React, { useCallback, useEffect, useState } from 'react';
-import { MdArrowBack } from 'react-icons/md';
+import { MdArrowBack, MdDone } from 'react-icons/md';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useSpring, animated } from 'react-spring';
 
@@ -12,8 +12,6 @@ import withReactContent from 'sweetalert2-react-content';
 import {
   Container,
   Title,
-  TodoContent,
-  TodoDescription,
   BackIcon,
   TitlePage,
   HeaderPageContainer,
@@ -95,7 +93,7 @@ const Todos: React.FC = () => {
   return (
     <animated.div style={animation}>
       <HeaderPageContainer>
-        <TitlePage>Posts</TitlePage>
+        <TitlePage>TODOs</TitlePage>
         <BackIcon onClick={() => history.push('/')}>
           <MdArrowBack size={30} />
         </BackIcon>
@@ -110,12 +108,12 @@ const Todos: React.FC = () => {
           </div>
         }
       >
-        {dataDisplayed.map(({ id, title }) => (
+        {dataDisplayed.map(({ id, title, completed }) => (
           <Container elevation={2} key={id}>
-            <Title>{title}</Title>
-            <TodoContent>
-              <TodoDescription>{''}</TodoDescription>
-            </TodoContent>
+            <Title completed={completed}>
+              {title}
+              <span> {completed && <MdDone size={25} />}</span>
+            </Title>
           </Container>
         ))}
       </InfiniteScroll>

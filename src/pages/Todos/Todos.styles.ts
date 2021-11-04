@@ -15,11 +15,6 @@ export const Container = styled(Paper)`
   }
 `;
 
-export const TodoContent = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const HeaderPageContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -36,19 +31,18 @@ export const TitlePage = styled.h1`
   letter-spacing: 1px;
 `;
 
-export const Title = styled.p`
-  color: var(--text);
+export const Title = styled.p<{ completed: boolean }>`
   width: 100%;
   margin-bottom: 20px;
 
   font-size: 1.5rem;
   letter-spacing: 1px;
-`;
 
-export const TodoDescription = styled.p`
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 10px;
+  text-decoration: ${props => (props.completed ? 'line-through' : 'initial')};
+  color: ${props => (props.completed ? 'var(--green)' : 'var(--text)')};
+
+  display: flex;
+  align-items: center;
 `;
 
 interface BackIconProps {
