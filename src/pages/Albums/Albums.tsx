@@ -54,7 +54,6 @@ const Albums: React.FC = () => {
   const ALBUMS_OFFSET = 15;
 
   useEffect(() => {
-    console.log('adfadfad');
     const fetchAlbumsData = async () => {
       try {
         const albumsData = await getAlbums();
