@@ -52,7 +52,7 @@ const Todos: React.FC = () => {
     delay: 600,
   });
 
-  const TODOS_OFFSET = 10;
+  const TODOS_OFFSET = 15;
 
   useEffect(() => {
     const fetchTodosData = async () => {
@@ -76,7 +76,7 @@ const Todos: React.FC = () => {
     fetchTodosData();
   }, []);
 
-  const handleNext = useCallback(async () => {
+  const handleNext = useCallback(() => {
     if (todos.length === dataDisplayed.length) {
       setHasMore(false);
       return;
